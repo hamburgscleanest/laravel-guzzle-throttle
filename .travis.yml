@@ -1,0 +1,12 @@
+language: php
+php:
+  - '7.1'
+  - '7.2'
+  - nightly
+install:
+  - composer install
+script:
+  ./vendor/bin/phpunit --coverage-clover=coverage.clover
+after_script:
+  - if [ "$TRAVIS_PHP_VERSION" == "7.2" ]; then wget https://scrutinizer-ci.com/ocular.phar; fi
+  - if [ "$TRAVIS_PHP_VERSION" == "7.2" ]; then php ocular.phar code-coverage:upload --format=php-clover coverage.clover; fi
