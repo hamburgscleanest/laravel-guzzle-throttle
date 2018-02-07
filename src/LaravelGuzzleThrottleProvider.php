@@ -2,6 +2,7 @@
 
 namespace hamburgscleanest\LaravelGuzzleThrottle;
 
+use hamburgscleanest\LaravelGuzzleThrottle\Models\GuzzleThrottle;
 use Illuminate\Support\ServiceProvider;
 
 /**
@@ -27,12 +28,15 @@ class LaravelGuzzleThrottleProvider extends ServiceProvider
      * Register any package services.
      *
      * @return void
+     * @throws \hamburgscleanest\GuzzleAdvancedThrottle\Exceptions\UnknownStorageAdapterException
+     * @throws \hamburgscleanest\GuzzleAdvancedThrottle\Exceptions\UnknownCacheStrategyException
+     * @throws \Exception
      */
     public function register() : void
     {
-        $this->app->bind('laravel-guzzle-throttle', function()
+        $this->app->singleton('laravel-guzzle-throttle', function()
         {
-            return null;
+            return new GuzzleThrottle();
         });
     }
 }

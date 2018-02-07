@@ -7,7 +7,7 @@ use Orchestra\Testbench\TestCase as Orchestra;
 
 /**
  * Class TestCase
- * @package hamburgscleanest\LaravelRiot\Tests
+ * @package hamburgscleanest\LaravelGuzzleThrottle\Tests
  */
 class TestCase extends Orchestra
 {
