@@ -1,6 +1,6 @@
 <?php
 
-namespace hamburgscleanest\LaravelGuzzleThrottlgit remote add origin https://github.com/hamburgscleanest/laravel-guzzle-throttle.gite;
+namespace hamburgscleanest\LaravelGuzzleThrottle;
 
 use Illuminate\Support\ServiceProvider;
 
