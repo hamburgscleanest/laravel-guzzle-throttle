@@ -461,16 +461,16 @@
         },
         {
             "name": "hamburgscleanest/guzzle-advanced-throttle",
-            "version": "v1.0.3",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hamburgscleanest/guzzle-advanced-throttle.git",
-                "reference": "0495c32be8844b2e323fa99cccf5b9a067185b9b"
+                "reference": "7640e38e7ec700ab41e3ac1ff2411f8b7f675ef6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hamburgscleanest/guzzle-advanced-throttle/zipball/0495c32be8844b2e323fa99cccf5b9a067185b9b",
-                "reference": "0495c32be8844b2e323fa99cccf5b9a067185b9b",
+                "url": "https://api.github.com/repos/hamburgscleanest/guzzle-advanced-throttle/zipball/7640e38e7ec700ab41e3ac1ff2411f8b7f675ef6",
+                "reference": "7640e38e7ec700ab41e3ac1ff2411f8b7f675ef6",
                 "shasum": ""
             },
             "require": {
@@ -482,7 +482,7 @@
                 "symfony/http-kernel": "4.*"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.4"
+                "phpunit/phpunit": "^7.0.0"
             },
             "type": "library",
             "autoload": {
@@ -517,20 +517,20 @@
                 "response",
                 "throttle"
             ],
-            "time": "2018-02-07T22:18:05+00:00"
+            "time": "2018-02-08T21:29:26+00:00"
         },
         {
             "name": "laravel/framework",
-            "version": "v5.6.0",
+            "version": "v5.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "56a58e0fa3d845bb992d7c64ac9bb6d0c24b745a"
+                "reference": "74c54c0dc8195d7b96c5c3bbb16ccf2467605ecc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/56a58e0fa3d845bb992d7c64ac9bb6d0c24b745a",
-                "reference": "56a58e0fa3d845bb992d7c64ac9bb6d0c24b745a",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/74c54c0dc8195d7b96c5c3bbb16ccf2467605ecc",
+                "reference": "74c54c0dc8195d7b96c5c3bbb16ccf2467605ecc",
                 "shasum": ""
             },
             "require": {
@@ -652,7 +652,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2018-02-07T15:36:40+00:00"
+            "time": "2018-02-08T16:56:04+00:00"
         },
         {
             "name": "league/flysystem",
