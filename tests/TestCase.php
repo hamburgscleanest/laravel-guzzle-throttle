@@ -2,7 +2,7 @@
 
 namespace hamburgscleanest\LaravelGuzzleThrottle\Tests;
 
-use hamburgscleanest\LaravelGuzzleThrottle\LaravelGuzzleThrottleProvider;
+use hamburgscleanest\LaravelGuzzleThrottle\LaravelGuzzleThrottleServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 /**
@@ -23,7 +23,7 @@ class TestCase extends Orchestra
      */
     protected function getPackageProviders($app) : array
     {
-        return [LaravelGuzzleThrottleProvider::class];
+        return [LaravelGuzzleThrottleServiceProvider::class];
     }
 
 }

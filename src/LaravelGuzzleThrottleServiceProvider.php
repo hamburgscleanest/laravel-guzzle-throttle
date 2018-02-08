@@ -6,10 +6,10 @@ use hamburgscleanest\LaravelGuzzleThrottle\Models\GuzzleThrottle;
 use Illuminate\Support\ServiceProvider;
 
 /**
- * Class LaravelGuzzleThrottleProvider
+ * Class LaravelGuzzleThrottleServiceProvider
  * @package hamburgscleanest\LaravelGuzzleThrottle
  */
-class LaravelGuzzleThrottleProvider extends ServiceProvider
+class LaravelGuzzleThrottleServiceProvider extends ServiceProvider
 {
 
     /**
