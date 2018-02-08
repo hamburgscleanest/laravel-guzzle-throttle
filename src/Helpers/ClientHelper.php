@@ -2,6 +2,7 @@
 
 namespace hamburgscleanest\LaravelGuzzleThrottle\Helpers;
 
+use GuzzleHttp\Client;
 use GuzzleHttp\Handler\CurlHandler;
 use GuzzleHttp\HandlerStack;
 use hamburgscleanest\GuzzleAdvancedThrottle\Middleware\ThrottleMiddleware;
