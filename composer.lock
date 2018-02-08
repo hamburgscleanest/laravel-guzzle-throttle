@@ -461,16 +461,16 @@
         },
         {
             "name": "hamburgscleanest/guzzle-advanced-throttle",
-            "version": "v1.0.4",
+            "version": "v1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hamburgscleanest/guzzle-advanced-throttle.git",
-                "reference": "7640e38e7ec700ab41e3ac1ff2411f8b7f675ef6"
+                "reference": "903994e67a7e3928275f7d899c9f98bfafcf7833"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hamburgscleanest/guzzle-advanced-throttle/zipball/7640e38e7ec700ab41e3ac1ff2411f8b7f675ef6",
-                "reference": "7640e38e7ec700ab41e3ac1ff2411f8b7f675ef6",
+                "url": "https://api.github.com/repos/hamburgscleanest/guzzle-advanced-throttle/zipball/903994e67a7e3928275f7d899c9f98bfafcf7833",
+                "reference": "903994e67a7e3928275f7d899c9f98bfafcf7833",
                 "shasum": ""
             },
             "require": {
@@ -517,20 +517,20 @@
                 "response",
                 "throttle"
             ],
-            "time": "2018-02-08T21:29:26+00:00"
+            "time": "2018-02-08T22:43:18+00:00"
         },
         {
             "name": "laravel/framework",
-            "version": "v5.6.1",
+            "version": "v5.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "74c54c0dc8195d7b96c5c3bbb16ccf2467605ecc"
+                "reference": "7742e7b54ba48b49f43a7d6f51ff57a63b9ed108"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/74c54c0dc8195d7b96c5c3bbb16ccf2467605ecc",
-                "reference": "74c54c0dc8195d7b96c5c3bbb16ccf2467605ecc",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/7742e7b54ba48b49f43a7d6f51ff57a63b9ed108",
+                "reference": "7742e7b54ba48b49f43a7d6f51ff57a63b9ed108",
                 "shasum": ""
             },
             "require": {
@@ -652,7 +652,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2018-02-08T16:56:04+00:00"
+            "time": "2018-02-08T22:17:44+00:00"
         },
         {
             "name": "league/flysystem",
