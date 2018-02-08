@@ -17,6 +17,8 @@ Via Composer
 $ composer require hamburgscleanest/laravel-guzzle-throttle
 ```
 
+----------
+
 ### Laravel < 5.5.x
 
 Add the service provider to your providers array
@@ -29,14 +31,87 @@ Add the service provider to your providers array
         ],
 ```
 
+----------
+
 ### Laravel >= 5.5.x 
 
 `Automatic Package Discovery`
 Everything is automatically registered for you when using Laravel 5.5.x or later.
 
+----------
+
+### Configuration
+
+Publish the config to get the example configuration.
+
+``` bash
+$ php artisan vendor:publish
+```
+
+----------
+
+#### Example configuration
+
+> **20** requests every **1 seconds**
+>
+> **100** requests every **2 minutes**
+
+``` php
+    return [
+        'cache' => [
+            // Name of the configured driver in the Laravel cache config file / Also needs to be set when "no-cache" is set! Because it's used for the internal timers
+            'driver'   => 'default',
+            // Cache strategy: no-cache, cache, force-cache
+            'strategy' => 'cache',
+            // TTL in minutes
+            'ttl'      => 900
+        ],
+        'rules' => [
+            [
+                // host (including scheme)
+                'host'             => 'https://www.google.com',
+                // maximum number of requests in the given interval
+                'max_requests'     => 20,
+                // interval in seconds till the limit is reset
+                'request_interval' => 1
+            ],
+            [
+                // host (including scheme)
+                'host'             => 'https://www.google.com',
+                // maximum number of requests in the given interval
+                'max_requests'     => 100,
+                // interval in seconds till the limit is reset
+                'request_interval' => 120
+            ]
+        ]
+    ];
+```
+
+----------
+
+#### Further details
+
+If you want to know more about the possible configurations, head over to the middleware repository: [Guzzle Advanced Throttle](https://github.com/hamburgscleanest/guzzle-advanced-throttle).
+
+----------
+
 ### Usage
 
--- TODO --
+Using the preconfigured client is super easy.
+You just have to instantiate your client like this:
+
+``` php
+// returns an instance of GuzzleHttp\Client
+$client = GuzzleThrottle::client(['base_uri' => 'https://www.google.com']);
+```
+
+After that you can use all off the usual `GuzzleHttp\Client` methods, e.g.
+
+``` php
+$client->get('/test'));
+```
+
+----------
 
 ## Changes
 

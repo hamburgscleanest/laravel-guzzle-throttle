@@ -24,7 +24,7 @@ return [
             // host (including scheme)
             'host'             => 'https://www.google.com',
             // maximum number of requests in the given interval
-            'max_requests'     => 200,
+            'max_requests'     => 100,
             // interval in seconds till the limit is reset
             'request_interval' => 120
         ]

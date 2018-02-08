@@ -4,7 +4,7 @@ All Notable changes to `laravel-guzzle-throttle` will be documented in this file
 
 Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
 
-## Release Candidate
+## Next 
 
 ### Added
 - Nothing
@@ -20,3 +20,9 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ### Security
 - Nothing
+
+----------
+
+## 1.0.0
+
+- initial release
