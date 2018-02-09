@@ -1,7 +1,8 @@
 <?php
 
-// example configuration
+// @codeCoverageIgnoreStart
 
+// example configuration
 return [
     'cache' => [
         // Name of the configured driver in the Laravel cache config file / Also needs to be set when "no-cache" is set! Because it's used for the internal timers
@@ -30,3 +31,5 @@ return [
         ]
     ]
 ];
+
+// @codeCoverageIgnoreEnd

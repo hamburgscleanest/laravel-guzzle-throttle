@@ -3,6 +3,7 @@
 namespace hamburgscleanest\LaravelGuzzleThrottle\Tests;
 
 use hamburgscleanest\LaravelGuzzleThrottle\Exceptions\DriverNotSetException;
+use hamburgscleanest\LaravelGuzzleThrottle\Facades\LaravelGuzzleThrottle;
 use hamburgscleanest\LaravelGuzzleThrottle\Models\GuzzleThrottle;
 
 
@@ -21,7 +22,7 @@ class GuzzleThrottleTest extends TestCase
     {
         $this->expectException(DriverNotSetException::class);
 
-        (new GuzzleThrottle())->client(['base_uri' => 'https://www.google.com']);
+        LaravelGuzzleThrottle::client(['base_uri' => 'https://www.google.com']);
     }
 
     /**
