@@ -64,14 +64,15 @@ class ConfigHelper extends ServiceProvider
      */
     public static function getConfigForDriver(string $driverName) : array
     {
-        return Config::get('cache.stores.' . ($driverName === 'default' ? self::_getDefaultConfigName() : $driverName));
+        return Config::get('cache.stores.' . self::getConfigName($driverName));
     }
 
     /**
+     * @param string $driverName
      * @return string
      */
-    private static function _getDefaultConfigName() : string
+    public static function getConfigName(string $driverName) : string
     {
-        return Config::get('cache.default');
+        return $driverName === 'default' ? Config::get('cache.default') : $driverName;
     }
 }
