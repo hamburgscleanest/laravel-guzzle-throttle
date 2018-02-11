@@ -3,6 +3,7 @@
 namespace hamburgscleanest\LaravelGuzzleThrottle\Models;
 
 use GuzzleHttp\Client;
+use hamburgscleanest\GuzzleAdvancedThrottle\RequestLimitRuleset;
 use hamburgscleanest\LaravelGuzzleThrottle\Helpers\ClientHelper;
 use hamburgscleanest\LaravelGuzzleThrottle\Helpers\ConfigHelper;
 
@@ -13,6 +14,18 @@ use hamburgscleanest\LaravelGuzzleThrottle\Helpers\ConfigHelper;
 class GuzzleThrottle
 {
 
+    /** @var RequestLimitRuleset */
+    private $_requestLimitRuleset;
+
+    /**
+     * GuzzleThrottle constructor.
+     * @param RequestLimitRuleset|null $requestLimitRuleset
+     */
+    public function __construct(RequestLimitRuleset $requestLimitRuleset = null)
+    {
+        $this->_requestLimitRuleset = $requestLimitRuleset ?? ConfigHelper::getRequestLimitRuleset();
+    }
+
     /**
      * @param array $config
      * @return Client
@@ -20,6 +33,6 @@ class GuzzleThrottle
      */
     public function client(array $config) : Client
     {
-        return ClientHelper::getThrottledClient($config, ConfigHelper::getRequestLimitRuleset());
+        return ClientHelper::getThrottledClient($config, $this->_requestLimitRuleset);
     }
 }
