@@ -45,7 +45,7 @@ class ConfigHelper extends ServiceProvider
      */
     private static function _getMiddlewareConfig(string $driverName, int $ttl) : array
     {
-        $driverConfig = self::_getConfigForDriver($driverName);
+        $driverConfig = self::getConfigForDriver($driverName);
         $driver = $driverConfig['driver'] ?? 'file';
         unset($driverConfig['driver']);
 
@@ -62,7 +62,7 @@ class ConfigHelper extends ServiceProvider
      * @param string $driverName
      * @return array
      */
-    private static function _getConfigForDriver(string $driverName) : array
+    public static function getConfigForDriver(string $driverName) : array
     {
         return Config::get('cache.stores.' . ($driverName === 'default' ? self::_getDefaultConfigName() : $driverName));
     }
