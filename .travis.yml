@@ -5,7 +5,7 @@ php:
   - '7.2'
   - nightly
 install:
-  - composer install
+  - composer update
 script:
   ./vendor/bin/phpunit --coverage-clover=coverage.clover
 after_script:
