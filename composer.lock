@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6f2894701b6b5d00010d59be8b479ebe",
+    "content-hash": "8e636f787b7f1910066b4710f2cd2ba3",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -462,28 +462,29 @@
         },
         {
             "name": "hamburgscleanest/guzzle-advanced-throttle",
-            "version": "v1.0.6",
+            "version": "v1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hamburgscleanest/guzzle-advanced-throttle.git",
-                "reference": "1d1fa56ce02991f353ede64b813c084cd8e56f5c"
+                "reference": "c8a26e55ca84d6d9bb67cbd53a83125a415dc85f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hamburgscleanest/guzzle-advanced-throttle/zipball/1d1fa56ce02991f353ede64b813c084cd8e56f5c",
-                "reference": "1d1fa56ce02991f353ede64b813c084cd8e56f5c",
+                "url": "https://api.github.com/repos/hamburgscleanest/guzzle-advanced-throttle/zipball/c8a26e55ca84d6d9bb67cbd53a83125a415dc85f",
+                "reference": "c8a26e55ca84d6d9bb67cbd53a83125a415dc85f",
                 "shasum": ""
             },
             "require": {
-                "guzzlehttp/guzzle": "^6.0",
-                "illuminate/cache": "5.6.*",
-                "illuminate/config": "5.6.*",
-                "illuminate/container": "5.6.*",
-                "illuminate/filesystem": "5.6.*",
-                "symfony/http-kernel": "4.*"
+                "guzzlehttp/guzzle": "~6.3.0",
+                "illuminate/cache": "~5.5.0|~5.6.0",
+                "illuminate/config": "~5.5.0|~5.6.0",
+                "illuminate/container": "~5.5.0|~5.6.0",
+                "illuminate/filesystem": "~5.5.0|~5.6.0",
+                "php": "^7.1",
+                "symfony/http-kernel": "~3.0.0|~4.0.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^7.0.0"
+                "phpunit/phpunit": "~6.0.0|~7.0.0"
             },
             "type": "library",
             "autoload": {
@@ -518,7 +519,7 @@
                 "response",
                 "throttle"
             ],
-            "time": "2018-02-16T00:05:26+00:00"
+            "time": "2018-03-13T21:21:19+00:00"
         },
         {
             "name": "laravel/framework",
