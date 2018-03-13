@@ -7,7 +7,7 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-A Laravel wrapper for [Guzzle Advanced Throttle](https://github.com/hamburgscleanest/guzzle-advanced-throttle).
+A Laravel (5.6 upwards) wrapper for [Guzzle Advanced Throttle](https://github.com/hamburgscleanest/guzzle-advanced-throttle).
 
 ## Install
 
@@ -17,26 +17,12 @@ Via Composer
 $ composer require hamburgscleanest/laravel-guzzle-throttle
 ```
 
-----------
-
-### Laravel < 5.5.x
-
-Add the service provider to your providers array
-``` php
-    'providers' => [
-                
-                ...
-           
-            LaravelGuzzleThrottleServiceProvider::class,
-        ],
-```
 
 ----------
 
-### Laravel >= 5.5.x 
+### Automatic Package Discovery
 
-`Automatic Package Discovery`
-Everything is automatically registered for you when using Laravel 5.5.x or later.
+Everything is automatically registered for you.
 
 ----------
 
