@@ -23,6 +23,16 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ----------
 
+## 2.0.0
+
+This version adds support for Guzzle Advanced Throttle 2.0.0.
+
+### Added
+- Host wildcards: [WILDCARDS](https://github.com/hamburgscleanest/guzzle-advanced-throttle/blob/master/README.md#wildcards)
+- More flexible configuration: [USAGE](https://github.com/hamburgscleanest/guzzle-advanced-throttle#usage)
+
+----------
+
 ## 1.0.4
 
 ### Added

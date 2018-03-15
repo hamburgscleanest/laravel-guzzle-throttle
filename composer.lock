@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8e636f787b7f1910066b4710f2cd2ba3",
+    "content-hash": "e16fda7298968deb8604e2f6cb08ba3d",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -462,16 +462,16 @@
         },
         {
             "name": "hamburgscleanest/guzzle-advanced-throttle",
-            "version": "v1.0.7",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hamburgscleanest/guzzle-advanced-throttle.git",
-                "reference": "c8a26e55ca84d6d9bb67cbd53a83125a415dc85f"
+                "reference": "04881ebc7a616b9883525c0e74e0f32e389d5a4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hamburgscleanest/guzzle-advanced-throttle/zipball/c8a26e55ca84d6d9bb67cbd53a83125a415dc85f",
-                "reference": "c8a26e55ca84d6d9bb67cbd53a83125a415dc85f",
+                "url": "https://api.github.com/repos/hamburgscleanest/guzzle-advanced-throttle/zipball/04881ebc7a616b9883525c0e74e0f32e389d5a4e",
+                "reference": "04881ebc7a616b9883525c0e74e0f32e389d5a4e",
                 "shasum": ""
             },
             "require": {
@@ -519,20 +519,20 @@
                 "response",
                 "throttle"
             ],
-            "time": "2018-03-13T21:21:19+00:00"
+            "time": "2018-03-15T19:31:31+00:00"
         },
         {
             "name": "laravel/framework",
-            "version": "v5.6.11",
+            "version": "v5.6.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "195ba6a67bdad2a23105c7ab410cd43e0f20bb73"
+                "reference": "82d8165d1ea86bdd81ddfa1db9343fa19e7d1450"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/195ba6a67bdad2a23105c7ab410cd43e0f20bb73",
-                "reference": "195ba6a67bdad2a23105c7ab410cd43e0f20bb73",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/82d8165d1ea86bdd81ddfa1db9343fa19e7d1450",
+                "reference": "82d8165d1ea86bdd81ddfa1db9343fa19e7d1450",
                 "shasum": ""
             },
             "require": {
@@ -541,7 +541,7 @@
                 "erusev/parsedown": "~1.7",
                 "ext-mbstring": "*",
                 "ext-openssl": "*",
-                "league/flysystem": "~1.0",
+                "league/flysystem": "^1.0.8",
                 "monolog/monolog": "~1.12",
                 "nesbot/carbon": "^1.24.1",
                 "php": "^7.1.3",
@@ -657,7 +657,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2018-03-09T16:53:27+00:00"
+            "time": "2018-03-14T17:29:38+00:00"
         },
         {
             "name": "league/flysystem",
@@ -2420,21 +2420,21 @@
         },
         {
             "name": "orchestra/testbench",
-            "version": "v3.6.2",
+            "version": "v3.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testbench.git",
-                "reference": "24ea3330f448815ac3bea53611e944f6eee0c308"
+                "reference": "feaad428c39318cdaef2caced6d49eda125dcb3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench/zipball/24ea3330f448815ac3bea53611e944f6eee0c308",
-                "reference": "24ea3330f448815ac3bea53611e944f6eee0c308",
+                "url": "https://api.github.com/repos/orchestral/testbench/zipball/feaad428c39318cdaef2caced6d49eda125dcb3e",
+                "reference": "feaad428c39318cdaef2caced6d49eda125dcb3e",
                 "shasum": ""
             },
             "require": {
-                "laravel/framework": "~5.6.4",
-                "orchestra/testbench-core": "~3.6.3",
+                "laravel/framework": "~5.6.5",
+                "orchestra/testbench-core": "~3.6.4",
                 "php": ">=7.1",
                 "phpunit/phpunit": "~7.0"
             },
@@ -2468,7 +2468,7 @@
                 "orchestral",
                 "testing"
             ],
-            "time": "2018-02-20T05:32:04+00:00"
+            "time": "2018-03-15T04:12:27+00:00"
         },
         {
             "name": "orchestra/testbench-core",
@@ -3896,7 +3896,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.0"
+        "php": "^7.1"
     },
     "platform-dev": []
 }

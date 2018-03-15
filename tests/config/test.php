@@ -7,10 +7,11 @@ return [
         'ttl'      => 900
     ],
     'rules' => [
-        [
-            'host'             => 'https://www.google.com',
-            'max_requests'     => 1,
-            'request_interval' => 1
+        'https://www.google.com' => [
+            [
+                'max_requests'     => 1,
+                'request_interval' => 1
+            ]
         ]
     ]
 ];

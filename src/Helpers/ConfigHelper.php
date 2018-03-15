@@ -18,7 +18,7 @@ class ConfigHelper extends ServiceProvider
     /**
      * @param array $config
      * @param RequestLimitRuleset $rules
-     * @return Client
+     * @return RequestLimitRuleset
      * @throws \Exception
      */
     public static function getRequestLimitRuleset() : RequestLimitRuleset
