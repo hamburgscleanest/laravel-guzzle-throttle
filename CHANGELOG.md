@@ -23,6 +23,13 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ----------
 
+## 2.0.1
+
+### Fixed
+- Fixed problem in composer.json of Advanced Guzzle Throttling
+
+----------
+
 ## 2.0.0
 
 This version adds support for Guzzle Advanced Throttle 2.0.0.
