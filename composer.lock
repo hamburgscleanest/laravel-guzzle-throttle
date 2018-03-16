@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e16fda7298968deb8604e2f6cb08ba3d",
+    "content-hash": "03922a303cff6b8e811b63236981582f",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -462,16 +462,16 @@
         },
         {
             "name": "hamburgscleanest/guzzle-advanced-throttle",
-            "version": "v2.0.0",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hamburgscleanest/guzzle-advanced-throttle.git",
-                "reference": "04881ebc7a616b9883525c0e74e0f32e389d5a4e"
+                "reference": "6292605bbc578d3a516ccbf579f6c92d7903f3e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hamburgscleanest/guzzle-advanced-throttle/zipball/04881ebc7a616b9883525c0e74e0f32e389d5a4e",
-                "reference": "04881ebc7a616b9883525c0e74e0f32e389d5a4e",
+                "url": "https://api.github.com/repos/hamburgscleanest/guzzle-advanced-throttle/zipball/6292605bbc578d3a516ccbf579f6c92d7903f3e4",
+                "reference": "6292605bbc578d3a516ccbf579f6c92d7903f3e4",
                 "shasum": ""
             },
             "require": {
@@ -481,7 +481,7 @@
                 "illuminate/container": "~5.5.0|~5.6.0",
                 "illuminate/filesystem": "~5.5.0|~5.6.0",
                 "php": "^7.1",
-                "symfony/http-kernel": "~3.0.0|~4.0.0"
+                "symfony/http-kernel": "~3|~4"
             },
             "require-dev": {
                 "phpunit/phpunit": "~6.0.0|~7.0.0"
@@ -519,7 +519,7 @@
                 "response",
                 "throttle"
             ],
-            "time": "2018-03-15T19:31:31+00:00"
+            "time": "2018-03-16T10:30:17+00:00"
         },
         {
             "name": "laravel/framework",
