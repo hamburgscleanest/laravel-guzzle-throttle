@@ -23,6 +23,15 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ----------
 
+## 2.0.1
+
+### Fixed
+There was a problem in the composer.json that for example broke the compatibility to Drupal 8. This is fixed in this release. 
+
+Thanks to @berenddeboer !
+
+----------
+
 ## 2.0.0
 
 This version adds support for Guzzle Advanced Throttle 2.0.0.
