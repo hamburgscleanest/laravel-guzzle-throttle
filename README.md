@@ -9,6 +9,9 @@
 
 A Laravel (>= 5.5) wrapper for [Guzzle Advanced Throttle](https://github.com/hamburgscleanest/guzzle-advanced-throttle).
 
+> **Please be aware that the format of the configuration changed since 2.0.0!**  
+> Check out [Configuration](#configuration)
+
 ## Install
 
 Via Composer
