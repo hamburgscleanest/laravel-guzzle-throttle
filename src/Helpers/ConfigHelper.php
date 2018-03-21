@@ -52,7 +52,7 @@ class ConfigHelper extends ServiceProvider
         return [
             'cache' => [
                 'driver'  => $driver,
-                'options' => $driverConfig,
+                'options' => self::_getOptions($driverName, $driverConfig),
                 'ttl'     => $ttl
             ]
         ];
@@ -74,5 +74,22 @@ class ConfigHelper extends ServiceProvider
     public static function getConfigName(string $driverName) : string
     {
         return $driverName === 'default' ? Config::get('cache.default') : $driverName;
+    }
+
+    /**
+     * Needs to be refactored :)
+     *
+     * @param string $driverName
+     * @param array $config
+     * @return array
+     */
+    private static function _getOptions(string $driverName, array $config) : array
+    {
+        if ($driverName !== 'redis')
+        {
+            return $config;
+        }
+
+        return ['database' => Config::get('database.redis.' . ($config['connection'] ?? 'default'))];
     }
 }

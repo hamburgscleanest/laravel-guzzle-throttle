@@ -20,7 +20,7 @@ class GuzzleThrottleTest extends TestCase
      * @test
      * @throws \Exception
      */
-    public function throws_cache_driver_not_set_exception()
+    public function throws_cache_driver_not_set_exception() : void
     {
         $this->expectException(DriverNotSetException::class);
 
@@ -31,7 +31,7 @@ class GuzzleThrottleTest extends TestCase
      * @test
      * @throws \Exception
      */
-    public function gets_throttled_client()
+    public function gets_throttled_client() : void
     {
         $this->_setConfig();
 
@@ -45,7 +45,7 @@ class GuzzleThrottleTest extends TestCase
     /**
      * @test
      */
-    public function can_set_custom_ruleset()
+    public function can_set_custom_ruleset() : void
     {
         $host = 'https://www.google.com';
 
@@ -61,7 +61,7 @@ class GuzzleThrottleTest extends TestCase
             'laravel',
             new Repository([
                 'cache' => [
-                    'driver'   => 'default',
+                    'driver'   => 'file',
                     'strategy' => 'no-cache',
                     'ttl'      => 900
                 ],

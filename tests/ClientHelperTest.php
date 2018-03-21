@@ -16,7 +16,7 @@ class ClientHelperTest extends TestCase
      * @test
      * @throws \Exception
      */
-    public function gets_throttled_client()
+    public function gets_throttled_client() : void
     {
         $this->_setConfig();
 

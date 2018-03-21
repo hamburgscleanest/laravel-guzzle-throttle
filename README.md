@@ -53,7 +53,7 @@ $ php artisan vendor:publish
     return [
         'cache' => [
             // Name of the configured driver in the Laravel cache config file / Also needs to be set when "no-cache" is set! Because it's used for the internal timers
-            'driver'   => 'default',
+            'driver'   => 'default', // 'redis', 'memcached', 'file'
             // Cache strategy: no-cache, cache, force-cache
             'strategy' => 'cache',
             // TTL in minutes

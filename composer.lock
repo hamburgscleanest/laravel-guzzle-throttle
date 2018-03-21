@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "03922a303cff6b8e811b63236981582f",
+    "content-hash": "3c90ebb854f299845d27b0bd06a8dde9",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -462,16 +462,16 @@
         },
         {
             "name": "hamburgscleanest/guzzle-advanced-throttle",
-            "version": "v2.0.1",
+            "version": "v2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hamburgscleanest/guzzle-advanced-throttle.git",
-                "reference": "6292605bbc578d3a516ccbf579f6c92d7903f3e4"
+                "reference": "ec158aaa965e542cb34c300a79075207f504f4cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hamburgscleanest/guzzle-advanced-throttle/zipball/6292605bbc578d3a516ccbf579f6c92d7903f3e4",
-                "reference": "6292605bbc578d3a516ccbf579f6c92d7903f3e4",
+                "url": "https://api.github.com/repos/hamburgscleanest/guzzle-advanced-throttle/zipball/ec158aaa965e542cb34c300a79075207f504f4cf",
+                "reference": "ec158aaa965e542cb34c300a79075207f504f4cf",
                 "shasum": ""
             },
             "require": {
@@ -479,8 +479,11 @@
                 "illuminate/cache": "~5.5.0|~5.6.0",
                 "illuminate/config": "~5.5.0|~5.6.0",
                 "illuminate/container": "~5.5.0|~5.6.0",
+                "illuminate/database": "~5.5.0|~5.6.0",
                 "illuminate/filesystem": "~5.5.0|~5.6.0",
+                "illuminate/redis": "~5.5.0|~5.6.0",
                 "php": "^7.1",
+                "predis/predis": "^1.1",
                 "symfony/http-kernel": "~3|~4"
             },
             "require-dev": {
@@ -519,7 +522,7 @@
                 "response",
                 "throttle"
             ],
-            "time": "2018-03-16T10:30:17+00:00"
+            "time": "2018-03-20T23:52:27+00:00"
         },
         {
             "name": "laravel/framework",
@@ -823,16 +826,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "1.24.2",
+            "version": "1.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "bba6c6e410c6b4317e37a9474aeaa753808c3875"
+                "reference": "cbcf13da0b531767e39eb86e9687f5deba9857b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/bba6c6e410c6b4317e37a9474aeaa753808c3875",
-                "reference": "bba6c6e410c6b4317e37a9474aeaa753808c3875",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/cbcf13da0b531767e39eb86e9687f5deba9857b4",
+                "reference": "cbcf13da0b531767e39eb86e9687f5deba9857b4",
                 "shasum": ""
             },
             "require": {
@@ -872,7 +875,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2018-03-10T10:10:14+00:00"
+            "time": "2018-03-19T15:50:49+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -921,6 +924,56 @@
                 "random"
             ],
             "time": "2017-09-27T21:40:39+00:00"
+        },
+        {
+            "name": "predis/predis",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nrk/predis.git",
+                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/f0210e38881631afeafb56ab43405a92cafd9fd1",
+                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "suggest": {
+                "ext-curl": "Allows access to Webdis when paired with phpiredis",
+                "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Predis\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniele Alessandri",
+                    "email": "suppakilla@gmail.com",
+                    "homepage": "http://clorophilla.net"
+                }
+            ],
+            "description": "Flexible and feature-complete Redis client for PHP and HHVM",
+            "homepage": "http://github.com/nrk/predis",
+            "keywords": [
+                "nosql",
+                "predis",
+                "redis"
+            ],
+            "time": "2016-06-16T16:22:20+00:00"
         },
         {
             "name": "psr/container",

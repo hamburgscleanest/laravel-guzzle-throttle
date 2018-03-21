@@ -23,6 +23,13 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ----------
 
+## 2.0.2 
+
+### Fixed
+- Fixed problems with Laravel cache drivers
+
+----------
+
 ## 2.0.1
 
 ### Fixed
