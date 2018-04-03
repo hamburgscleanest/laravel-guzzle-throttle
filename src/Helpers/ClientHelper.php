@@ -28,7 +28,7 @@ class ClientHelper extends ServiceProvider
     public static function getThrottledClient(array $config, RequestLimitRuleset $rules) : Client
     {
         $stack = self::_getHandlerStack($config);
-        $stack->push((new ThrottleMiddleware($rules))->handle());
+        $stack->unshift((new ThrottleMiddleware($rules))->handle());
 
         return new Client($config);
     }

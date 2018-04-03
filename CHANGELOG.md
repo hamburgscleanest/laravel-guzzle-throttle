@@ -23,6 +23,13 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ----------
 
+## 2.0.3
+
+### Optimization
+- Made sure that the Advanced Guzzle Throttle middleware is executed before any other middleware.
+
+----------
+
 ## 2.0.2 
 
 ### Fixed
