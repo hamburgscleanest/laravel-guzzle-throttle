@@ -47,43 +47,6 @@ $ php artisan vendor:publish
 
 ----------
 
-##### Configuration for version 1.x.x
-
-``` php
-    return [
-        'cache' => [
-            // Name of the configured driver in the Laravel cache config file / Also needs to be set when "no-cache" is set! Because it's used for the internal timers
-            'driver'   => 'default', // 'redis', 'memcached', 'file'
-            // Cache strategy: no-cache, cache, force-cache
-            'strategy' => 'cache',
-            // TTL in minutes
-            'ttl'      => 900
-        ],
-        'rules' => [
-            [
-                // host (including scheme)
-                'host'             => 'https://www.google.com',
-                // maximum number of requests in the given interval
-                'max_requests'     => 20,
-                // interval in seconds till the limit is reset
-                'request_interval' => 1
-            ],
-            [
-                // host (including scheme)
-                'host'             => 'https://www.google.com',
-                // maximum number of requests in the given interval
-                'max_requests'     => 100,
-                // interval in seconds till the limit is reset
-                'request_interval' => 120
-            ]
-        ]
-    ];
-```
-
-----------
-
-##### Configuration for version 2.x.x
-
 ``` php
     return [
         'cache' => [
