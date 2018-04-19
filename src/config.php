@@ -13,21 +13,20 @@ return [
         'ttl'      => 900
     ],
     'rules' => [
-        [
-            // host (including scheme)
-            'host'             => 'https://www.google.com',
-            // maximum number of requests in the given interval
-            'max_requests'     => 20,
-            // interval in seconds till the limit is reset
-            'request_interval' => 1
-        ],
-        [
-            // host (including scheme)
-            'host'             => 'https://www.google.com',
-            // maximum number of requests in the given interval
-            'max_requests'     => 100,
-            // interval in seconds till the limit is reset
-            'request_interval' => 120
+        // host (including scheme)
+        'https://www.google.com' => [
+            [
+                // maximum number of requests in the given interval
+                'max_requests'     => 20,
+                // interval in seconds till the limit is reset
+                'request_interval' => 1
+            ],
+            [
+                // maximum number of requests in the given interval
+                'max_requests'     => 100,
+                // interval in seconds till the limit is reset
+                'request_interval' => 120
+            ]
         ]
     ]
 ];

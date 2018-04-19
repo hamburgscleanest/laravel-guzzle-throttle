@@ -23,6 +23,13 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ----------
 
+## 2.0.4 
+
+### Fixed
+Example configuration was still in the old format. Updated example configuration to match version 2.0 specifications.
+
+----------
+
 ## 2.0.3
 
 ### Optimization
