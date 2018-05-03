@@ -23,6 +23,13 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ----------
 
+## 2.0.6
+
+### Fixed
+- Fixed issue in Redis driver 
+
+----------
+
 ## 2.0.5 
 
 ### General
