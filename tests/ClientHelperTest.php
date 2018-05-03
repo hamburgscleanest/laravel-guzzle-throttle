@@ -4,6 +4,7 @@ namespace hamburgscleanest\LaravelGuzzleThrottle\Tests;
 
 use hamburgscleanest\LaravelGuzzleThrottle\Helpers\ClientHelper;
 use hamburgscleanest\LaravelGuzzleThrottle\Helpers\ConfigHelper;
+use Illuminate\Support\Facades\Config;
 
 /**
  * Class ClientHelperTest

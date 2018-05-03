@@ -23,6 +23,13 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ----------
 
+## 2.0.5 
+
+### General
+- It's now easier to use the `ConfigHelper` when using `laravel-guzzle-throttle` inside of other packages.
+
+----------
+
 ## 2.0.4 
 
 ### Fixed

@@ -87,4 +87,37 @@ class ConfigHelperTest extends TestCase
 
         ConfigHelper::getRequestLimitRuleset();
     }
+
+    /** @test */
+    public function uses_alternative_config() : void
+    {
+        Config::shouldReceive('get')->with('cache.default')->andReturn('test');
+        Config::shouldReceive('get')->with('cache.stores.test')->andReturn(['driver' => 'file', 'path' => './']);
+
+        $config = [
+            'cache' => [
+                'driver'   => 'default',
+                'strategy' => 'no-cache',
+                'ttl'      => 100
+            ],
+            'rules' => [
+                'https://www.example.com' => [
+                    [
+                        'max_requests'     => 1,
+                        'request_interval' => 25
+                    ],
+                    [
+                        'max_requests'     => 2,
+                        'request_interval' => 50
+                    ],
+                    [
+                        'max_requests'     => 3,
+                        'request_interval' => 75
+                    ]
+                ]
+            ]
+        ];
+
+        $this->assertEquals(3, ConfigHelper::getRequestLimitRuleset($config)->getRequestLimitGroup()->getRequestLimiterCount());
+    }
 }

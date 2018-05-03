@@ -16,14 +16,16 @@ class ConfigHelper extends ServiceProvider
 {
 
     /**
-     * @param array $config
-     * @param RequestLimitRuleset $rules
+     * @param array|null $config
      * @return RequestLimitRuleset
-     * @throws \Exception
+     * @throws \hamburgscleanest\LaravelGuzzleThrottle\Exceptions\DriverNotSetException
      */
-    public static function getRequestLimitRuleset() : RequestLimitRuleset
+    public static function getRequestLimitRuleset(array $config = null) : RequestLimitRuleset
     {
-        $config = Config::get('laravel-guzzle-throttle');
+        if ($config === null)
+        {
+            $config = Config::get('laravel-guzzle-throttle');
+        }
 
         if (!isset($config['cache']['driver']))
         {
