@@ -23,6 +23,13 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ----------
 
+## 2.0.7 
+
+### General
+- Set the default cache driver to `CACHE_DRIVER` defined in the `.env` file instead of `default`.
+
+----------
+
 ## 2.0.6
 
 ### Fixed
