@@ -9,8 +9,10 @@
 
 A Laravel (>= 5.5) wrapper for [Guzzle Advanced Throttle](https://github.com/hamburgscleanest/guzzle-advanced-throttle).
 
-> **Please be aware that the format of the configuration changed since 2.0.0!**  
-> Check out [Configuration](#configuration)
+## Notice
+
+You have to use the [v2 branch](https://github.com/hamburgscleanest/laravel-guzzle-throttle/tree/v2) 
+if you are using Laravel or any Illuminate component below version `5.7`. 
 
 ## Install
 

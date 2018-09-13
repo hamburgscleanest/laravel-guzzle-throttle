@@ -23,6 +23,12 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ----------
 
+## 3.0.0
+
+This release adds compatibility with Laravel 5.7 (Illuminate).
+
+----------
+
 ## 2.0.9
 
 ### Improvement
