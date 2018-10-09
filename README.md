@@ -106,8 +106,7 @@ You can still add other middlewares to the stack, too.
 Just define your stack as usual and then pass it to the throttled client:
 
 ``` php
-$stack = new HandlerStack();
-$stack->setHandler(new CurlHandler());
+$stack = HandlerStack::Create(new CurlHandler());
 $stack->push(some_other_middleware);
 
 $client = GuzzleThrottle::client(['base_uri' => 'https://www.google.com', 'handler' => $stack]);
