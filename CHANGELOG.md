@@ -23,7 +23,7 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ----------
 
-# 3.0.1
+## 3.0.1
 
 ### Fixed
 The use of new HandlerStack was breaking the possibility to use a shared cookie jar by passing cookies => true in the GuzzleClient constructor (http://docs.guzzlephp.org/en/stable/quickstart.html#cookies).
