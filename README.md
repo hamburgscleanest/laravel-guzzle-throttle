@@ -91,7 +91,7 @@ You just have to instantiate your client like this:
 
 ``` php
 // returns an instance of GuzzleHttp\Client
-$client = GuzzleThrottle::client(['base_uri' => 'https://www.google.com']);
+$client = LaravelGuzzleThrottle::client(['base_uri' => 'https://www.google.com']);
 ```
 
 After that you can use all off the usual `GuzzleHttp\Client` methods, e.g.
@@ -110,7 +110,7 @@ $stack = new HandlerStack();
 $stack->setHandler(new CurlHandler());
 $stack->push(some_other_middleware);
 
-$client = GuzzleThrottle::client(['base_uri' => 'https://www.google.com', 'handler' => $stack]);
+$client = LaravelGuzzleThrottle::client(['base_uri' => 'https://www.google.com', 'handler' => $stack]);
 ```
 
 The client will 'automatically' add every other middleware to the top of the stack.
