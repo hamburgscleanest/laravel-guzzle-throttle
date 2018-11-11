@@ -42,8 +42,7 @@ class ClientHelper extends ServiceProvider
     {
         if (!isset($config[self::HANDLER_KEY]))
         {
-            $stack = new HandlerStack();
-            $stack->setHandler(new CurlHandler());
+            $stack = HandlerStack::create(new CurlHandler());
             $config[self::HANDLER_KEY] = $stack;
         }
 
