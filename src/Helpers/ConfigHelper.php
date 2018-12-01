@@ -36,7 +36,7 @@ class ConfigHelper extends ServiceProvider
             $config['rules'],
             $config['cache']['strategy'] ?? 'no-cache',
             'laravel',
-            new Repository(self::_getMiddlewareConfig($config['cache']['driver'], $config['cache']['ttl'] ?? null))
+            new Repository(self::getMiddlewareConfig($config['cache']['driver'], $config['cache']['ttl'] ?? null))
         );
     }
 
@@ -45,7 +45,7 @@ class ConfigHelper extends ServiceProvider
      * @param int $ttl
      * @return array
      */
-    private static function _getMiddlewareConfig(string $driverName, int $ttl) : array
+    public static function getMiddlewareConfig(string $driverName, int $ttl) : array
     {
         $driverConfig = self::getConfigForDriver($driverName);
         $driver = $driverConfig['driver'] ?? 'file';

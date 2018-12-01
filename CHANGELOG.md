@@ -23,6 +23,12 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ----------
 
+## 3.0.2
+
+Changed visibility of `ConfigHelper::getMiddlewareConfig` to public.
+
+----------
+
 ## 3.0.1
 
 ### Fixed
