@@ -23,6 +23,18 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ----------
 
+## 3.1.0
+
+- Changed the cached representation of the response
+
+### Laravel storage adapters
+
+You can disable caching for empty responses in the config now by setting `allow_empty` to `false`.
+
+Check out the [example configuration](https://github.com/hamburgscleanest/laravel-guzzle-throttle#example-configuration) for more information on how to set it.
+
+----------
+
 ## 3.0.2
 
 Changed visibility of `ConfigHelper::getMiddlewareConfig` to public.

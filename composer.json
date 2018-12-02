@@ -30,7 +30,7 @@
   ],
   "require": {
     "php": "^7.1",
-    "hamburgscleanest/guzzle-advanced-throttle": "^3",
+    "hamburgscleanest/guzzle-advanced-throttle": "^3.1.0",
     "illuminate/support": "^5.7"
   },
   "require-dev": {

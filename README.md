@@ -57,7 +57,9 @@ $ php artisan vendor:publish
             // Cache strategy: no-cache, cache, force-cache
             'strategy' => 'cache',
             // TTL in minutes
-            'ttl'      => 900
+            'ttl'      => 900,
+            // When this is set to false, empty responses won't be cached.
+            'allow_empty' => true
         ],
         'rules' => [
             // host (including scheme)
