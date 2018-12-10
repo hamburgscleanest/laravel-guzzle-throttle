@@ -2,6 +2,7 @@ language: php
 php:
 - '7.1'
 - '7.2'
+- '7.3'
 - 'nightly'
 matrix:
   allow_failures:
@@ -12,5 +13,5 @@ install:
 script:
   ./vendor/bin/phpunit --coverage-clover=coverage.clover
 after_script:
-- if [ "$TRAVIS_PHP_VERSION" == "7.2" ]; then wget https://scrutinizer-ci.com/ocular.phar; fi
-- if [ "$TRAVIS_PHP_VERSION" == "7.2" ]; then php ocular.phar code-coverage:upload --format=php-clover coverage.clover; fi
+- if [ "$TRAVIS_PHP_VERSION" == "7.3" ]; then wget https://scrutinizer-ci.com/ocular.phar; fi
+- if [ "$TRAVIS_PHP_VERSION" == "7.3" ]; then php ocular.phar code-coverage:upload --format=php-clover coverage.clover; fi
