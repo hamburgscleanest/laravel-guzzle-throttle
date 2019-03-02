@@ -23,6 +23,17 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ----------
 
+## 4.0.0
+
+### Added
+- Compatibility with Laravel / Illuminate 5.8
+- Upgraded PHPUnit to version 8
+
+### Removed
+- Dropped support for PHP 7.1
+
+----------
+
 ## 3.1.0
 
 - Changed the cached representation of the response
