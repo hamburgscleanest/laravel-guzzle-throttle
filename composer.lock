@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4468aa3903d3ab69a9dea9e4dab4d31c",
+    "content-hash": "acb851f35d562ce7156f66e3fa12bd9f",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -469,16 +469,16 @@
         },
         {
             "name": "hamburgscleanest/guzzle-advanced-throttle",
-            "version": "v4.0.1",
+            "version": "v4.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hamburgscleanest/guzzle-advanced-throttle.git",
-                "reference": "21e1a9ea4cd39df295444d1fbb180253695852cd"
+                "reference": "5b7c4b7c30ee6325f230fee03941076655ee6e53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hamburgscleanest/guzzle-advanced-throttle/zipball/21e1a9ea4cd39df295444d1fbb180253695852cd",
-                "reference": "21e1a9ea4cd39df295444d1fbb180253695852cd",
+                "url": "https://api.github.com/repos/hamburgscleanest/guzzle-advanced-throttle/zipball/5b7c4b7c30ee6325f230fee03941076655ee6e53",
+                "reference": "5b7c4b7c30ee6325f230fee03941076655ee6e53",
                 "shasum": ""
             },
             "require": {
@@ -531,7 +531,7 @@
                 "wildcard",
                 "wildcards"
             ],
-            "time": "2019-03-20T23:26:23+00:00"
+            "time": "2019-05-31T07:49:26+00:00"
         },
         {
             "name": "laravel/framework",
