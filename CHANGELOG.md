@@ -23,6 +23,13 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ----------
 
+## 4.0.2
+
+### Fixed
+The facade was wrongly defined as `GuzzleThrottle` instead of `LaravelGuzzleThrottle` in the `composer.json`.
+
+----------
+
 ## 4.0.1
 
 ### Security

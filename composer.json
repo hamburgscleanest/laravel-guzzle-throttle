@@ -59,7 +59,7 @@
         "hamburgscleanest\\LaravelGuzzleThrottle\\LaravelGuzzleThrottleServiceProvider"
       ],
       "aliases": {
-        "GuzzleThrottle": "hamburgscleanest\\LaravelGuzzleThrottle\\Facades\\LaravelGuzzleThrottle"
+        "LaravelGuzzleThrottle": "hamburgscleanest\\LaravelGuzzleThrottle\\Facades\\LaravelGuzzleThrottle"
       }
     }
   },
