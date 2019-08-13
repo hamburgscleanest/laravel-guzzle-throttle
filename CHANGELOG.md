@@ -23,6 +23,13 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ----------
 
+## 4.1.0
+
+### Compatibility
+Ensure compatibility to `Laravel 6.0`.
+
+----------
+
 ## 4.0.2
 
 ### Fixed

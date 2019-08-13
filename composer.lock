@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2468125ad0652618b49dd060c85e164b",
+    "content-hash": "d9666b736ea33f253c25e30388ed965a",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -482,26 +482,26 @@
         },
         {
             "name": "hamburgscleanest/guzzle-advanced-throttle",
-            "version": "v4.0.2",
+            "version": "v4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hamburgscleanest/guzzle-advanced-throttle.git",
-                "reference": "acdc67eafa970976dc3f61bb7b4d70acf2acc921"
+                "reference": "d46f2366b0e6378132d844c113ff465750c33ae2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hamburgscleanest/guzzle-advanced-throttle/zipball/acdc67eafa970976dc3f61bb7b4d70acf2acc921",
-                "reference": "acdc67eafa970976dc3f61bb7b4d70acf2acc921",
+                "url": "https://api.github.com/repos/hamburgscleanest/guzzle-advanced-throttle/zipball/d46f2366b0e6378132d844c113ff465750c33ae2",
+                "reference": "d46f2366b0e6378132d844c113ff465750c33ae2",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/guzzle": "~6.3.0",
-                "illuminate/cache": "^5.8.2",
-                "illuminate/config": "^5.8.2",
-                "illuminate/container": "^5.8.2",
-                "illuminate/database": "^5.8.2",
-                "illuminate/filesystem": "^5.8.2",
-                "illuminate/redis": "^5.8.2",
+                "illuminate/cache": "^5.8.2|^6.0.0",
+                "illuminate/config": "^5.8.2|^6.0.0",
+                "illuminate/container": "^5.8.2|^6.0.0",
+                "illuminate/database": "^5.8.2|^6.0.0",
+                "illuminate/filesystem": "^5.8.2|^6.0.0",
+                "illuminate/redis": "^5.8.2|^6.0.0",
                 "php": "^7.2",
                 "predis/predis": "^1.1",
                 "symfony/http-kernel": "~3|~4"
@@ -522,9 +522,9 @@
             "authors": [
                 {
                     "name": "Timo",
+                    "role": "Developer",
                     "email": "chroma91@gmail.com",
-                    "homepage": "https://www.timo-pruesse.de/",
-                    "role": "Developer"
+                    "homepage": "https://www.timo-pruesse.de/"
                 }
             ],
             "description": "A Guzzle middleware that can throttle requests according to (multiple) defined rules. It is also possible to define a caching strategy, e.g. get response from cache when rate limit is exceeded or always get cached value to spare your rate limits.",
@@ -544,7 +544,7 @@
                 "wildcard",
                 "wildcards"
             ],
-            "time": "2019-05-31T07:49:26+00:00"
+            "time": "2019-08-13T17:15:54+00:00"
         },
         {
             "name": "laravel/framework",
