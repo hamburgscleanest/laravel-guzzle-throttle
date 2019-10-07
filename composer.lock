@@ -548,16 +548,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v6.0.4",
+            "version": "v6.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "372e0add8a58e0e3deb78f87cbb2dc40d3e0ff08"
+                "reference": "a365bea7ff0dea9a50f5904be9e41656def9af4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/372e0add8a58e0e3deb78f87cbb2dc40d3e0ff08",
-                "reference": "372e0add8a58e0e3deb78f87cbb2dc40d3e0ff08",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/a365bea7ff0dea9a50f5904be9e41656def9af4b",
+                "reference": "a365bea7ff0dea9a50f5904be9e41656def9af4b",
                 "shasum": ""
             },
             "require": {
@@ -653,7 +653,7 @@
                 "league/flysystem-sftp": "Required to use the Flysystem SFTP driver (^1.0).",
                 "moontoast/math": "Required to use ordered UUIDs (^1.1).",
                 "pda/pheanstalk": "Required to use the beanstalk queue driver (^4.0).",
-                "pusher/pusher-php-server": "Required to use the Pusher broadcast driver (^3.0).",
+                "pusher/pusher-php-server": "Required to use the Pusher broadcast driver (^4.0).",
                 "symfony/cache": "Required to PSR-6 cache bridge (^4.3.4).",
                 "symfony/psr-http-message-bridge": "Required to use PSR-7 bridging features (^1.2).",
                 "wildbit/swiftmailer-postmark": "Required to use Postmark mail driver (^3.0)."
@@ -689,7 +689,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2019-09-24T13:40:36+00:00"
+            "time": "2019-10-01T13:55:56+00:00"
         },
         {
             "name": "league/flysystem",
@@ -858,16 +858,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.24.0",
+            "version": "2.25.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "934459c5ac0658bc765ad1e53512c7c77adcac29"
+                "reference": "d59c6cea9c4a3547bb6c0dfec451319abdaa4fb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/934459c5ac0658bc765ad1e53512c7c77adcac29",
-                "reference": "934459c5ac0658bc765ad1e53512c7c77adcac29",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/d59c6cea9c4a3547bb6c0dfec451319abdaa4fb1",
+                "reference": "d59c6cea9c4a3547bb6c0dfec451319abdaa4fb1",
                 "shasum": ""
             },
             "require": {
@@ -914,14 +914,14 @@
                     "homepage": "http://github.com/kylekatarnls"
                 }
             ],
-            "description": "A API extension for DateTime that supports 281 different languages.",
+            "description": "An API extension for DateTime that supports 281 different languages.",
             "homepage": "http://carbon.nesbot.com",
             "keywords": [
                 "date",
                 "datetime",
                 "time"
             ],
-            "time": "2019-08-31T16:37:55+00:00"
+            "time": "2019-10-05T15:52:23+00:00"
         },
         {
             "name": "opis/closure",
@@ -3192,29 +3192,29 @@
         },
         {
             "name": "orchestra/testbench",
-            "version": "v4.0.1",
+            "version": "v4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testbench.git",
-                "reference": "a10dbc9dba64c6fb98b5169f4daf476691596968"
+                "reference": "1ff8b79821e6b7624d056fd365e54415241d0146"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench/zipball/a10dbc9dba64c6fb98b5169f4daf476691596968",
-                "reference": "a10dbc9dba64c6fb98b5169f4daf476691596968",
+                "url": "https://api.github.com/repos/orchestral/testbench/zipball/1ff8b79821e6b7624d056fd365e54415241d0146",
+                "reference": "1ff8b79821e6b7624d056fd365e54415241d0146",
                 "shasum": ""
             },
             "require": {
-                "laravel/framework": "^6.0",
+                "laravel/framework": "^6.1",
                 "mockery/mockery": "^1.2.3",
-                "orchestra/testbench-core": "^4.0",
+                "orchestra/testbench-core": "^4.1",
                 "php": ">=7.2",
                 "phpunit/phpunit": "^8.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.0-dev"
+                    "dev-master": "5.0-dev"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3238,20 +3238,20 @@
                 "orchestral",
                 "testing"
             ],
-            "time": "2019-09-24T06:46:06+00:00"
+            "time": "2019-10-06T13:23:45+00:00"
         },
         {
             "name": "orchestra/testbench-core",
-            "version": "v4.0.2",
+            "version": "v4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testbench-core.git",
-                "reference": "0091a0f1b6493fa445379c58c4d0b757ea4ee2ee"
+                "reference": "ce1b8b329967c022a43a5efae4fdd9080eca3a6b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench-core/zipball/0091a0f1b6493fa445379c58c4d0b757ea4ee2ee",
-                "reference": "0091a0f1b6493fa445379c58c4d0b757ea4ee2ee",
+                "url": "https://api.github.com/repos/orchestral/testbench-core/zipball/ce1b8b329967c022a43a5efae4fdd9080eca3a6b",
+                "reference": "ce1b8b329967c022a43a5efae4fdd9080eca3a6b",
                 "shasum": ""
             },
             "require": {
@@ -3259,17 +3259,17 @@
                 "php": ">=7.2"
             },
             "require-dev": {
-                "laravel/framework": "^6.0",
+                "laravel/framework": "^6.1",
                 "laravel/laravel": "dev-master",
                 "mockery/mockery": "^1.2.3",
                 "phpunit/phpunit": "^8.3"
             },
             "suggest": {
-                "laravel/framework": "Required for testing (^6.0).",
-                "mockery/mockery": "Allow to use Mockery for testing (^1.2.3).",
-                "orchestra/testbench-browser-kit": "Allow to use legacy Laravel BrowserKit for testing (^4.0).",
-                "orchestra/testbench-dusk": "Allow to use Laravel Dusk for testing (^4.0).",
-                "phpunit/phpunit": "Allow to use PHPUnit for testing (^8.3)."
+                "laravel/framework": "Required for testing (^6.1).",
+                "mockery/mockery": "Allow using Mockery for testing (^1.2.3).",
+                "orchestra/testbench-browser-kit": "Allow using legacy Laravel BrowserKit for testing (^4.0).",
+                "orchestra/testbench-dusk": "Allow using Laravel Dusk for testing (^4.0).",
+                "phpunit/phpunit": "Allow using PHPUnit for testing (^8.3)."
             },
             "type": "library",
             "extra": {
@@ -3303,7 +3303,7 @@
                 "orchestral",
                 "testing"
             ],
-            "time": "2019-09-15T08:17:06+00:00"
+            "time": "2019-10-06T13:17:34+00:00"
         },
         {
             "name": "phar-io/manifest",
