@@ -15,6 +15,8 @@ use Illuminate\Support\ServiceProvider;
 class ConfigHelper extends ServiceProvider
 {
 
+    public const DEFAULT_TTL = 900;
+
     /**
      * @param array|null $config
      * @return RequestLimitRuleset
@@ -36,7 +38,7 @@ class ConfigHelper extends ServiceProvider
             $config['rules'],
             $config['cache']['strategy'] ?? 'no-cache',
             'laravel',
-            new Repository(self::getMiddlewareConfig($config['cache']['driver'], $config['cache']['ttl'] ?? null))
+            new Repository(self::getMiddlewareConfig($config['cache']['driver'], $config['cache']['ttl'] ?? self::DEFAULT_TTL))
         );
     }
 
