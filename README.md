@@ -121,7 +121,9 @@ Note: Also, `3xx` redirect codes are not cached.
 
 #### Supported drivers
 
-The following drivers are officially supported: `File`, `Redis` and `Memcached`.
+The following drivers are officially supported: [File](https://github.com/hamburgscleanest/guzzle-advanced-throttle#file), [Redis](https://github.com/hamburgscleanest/guzzle-advanced-throttle#redis) and [Memcached](https://github.com/hamburgscleanest/guzzle-advanced-throttle#memcached).
+
+The configuration for the drivers can be seen in the [middleware repository](https://github.com/hamburgscleanest/guzzle-advanced-throttle#laravel-drivers).
 
 ----------
 

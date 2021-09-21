@@ -5,18 +5,10 @@ namespace hamburgscleanest\LaravelGuzzleThrottle\Tests;
 use hamburgscleanest\LaravelGuzzleThrottle\Helpers\ClientHelper;
 use hamburgscleanest\LaravelGuzzleThrottle\Helpers\ConfigHelper;
 
-/**
- * Class ClientHelperTest
- * @package hamburgscleanest\LaravelGuzzleThrottle\Tests
- */
 class ClientHelperTest extends TestCase
 {
-
-    /**
-     * @test
-     * @throws \Exception
-     */
-    public function gets_throttled_client() : void
+    /** @test */
+    public function gets_throttled_client(): void
     {
         $this->_setConfig();
 
