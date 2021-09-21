@@ -10,6 +10,8 @@ matrix:
   allow_failures:
   - php: nightly
   fast_finish: true
+services:
+- redis
 install:
 - composer update
 script:
