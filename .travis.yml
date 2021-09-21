@@ -1,8 +1,11 @@
+dist: focal
 language: php
 php:
-- '7.2'
-- '7.3'
+- '8.0'
 - 'nightly'
+env:
+  global:
+    - XDEBUG_MODE=coverage
 matrix:
   allow_failures:
   - php: nightly
@@ -10,7 +13,7 @@ matrix:
 install:
 - composer update
 script:
-  ./vendor/bin/phpunit --coverage-clover=coverage.clover
-after_script:
-- if [ "$TRAVIS_PHP_VERSION" == "7.3" ]; then wget https://scrutinizer-ci.com/ocular.phar; fi
-- if [ "$TRAVIS_PHP_VERSION" == "7.3" ]; then php ocular.phar code-coverage:upload --format=php-clover coverage.clover; fi
+- ./vendor/bin/phpunit --coverage-clover=coverage.clover
+after_success:
+- if [ "$TRAVIS_PHP_VERSION" == "8.0" ]; then composer global require scrutinizer/ocular; fi
+- if [ "$TRAVIS_PHP_VERSION" == "8.0" ]; then composer global exec -v -- "ocular code-coverage:upload --format=php-clover coverage.clover"; fi
