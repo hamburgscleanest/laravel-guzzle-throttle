@@ -7,16 +7,15 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-A Laravel (>= 5.5) wrapper for [Guzzle Advanced Throttle](https://github.com/hamburgscleanest/guzzle-advanced-throttle).
+A Laravel (>= 8.0) wrapper for [Guzzle Advanced Throttle](https://github.com/hamburgscleanest/guzzle-advanced-throttle).
 
 ## Install
 
 Via Composer
 
 ``` bash
-$ composer require hamburgscleanest/laravel-guzzle-throttle
+composer require hamburgscleanest/laravel-guzzle-throttle
 ```
-
 
 ----------
 
@@ -31,7 +30,7 @@ Everything is automatically registered for you.
 Publish the config to get the example configuration.
 
 ``` bash
-$ php artisan vendor:publish
+php artisan vendor:publish
 ```
 
 ----------
@@ -76,22 +75,18 @@ $ php artisan vendor:publish
     ];
 ```
 
-> Make sure the host name does not end with a trailing slash.  
-> It should be `https://www.google.com` not `https://www.google.com/`.
-
 ----------
 
 ### Usage
 
-Using the preconfigured client is super easy.
-You just have to instantiate your client like this:
+To use the pre-configured client, you have to instantiate your client like this:
 
 ``` php
 // returns an instance of GuzzleHttp\Client
 $client = LaravelGuzzleThrottle::client(['base_uri' => 'https://www.google.com']);
 ```
 
-After that you can use all off the usual `GuzzleHttp\Client` methods, e.g.
+After that, you can use all of the usual `GuzzleHttp\Client` methods, e.g.
 
 ``` php
 $client->get('/test'));
@@ -100,7 +95,7 @@ $client->get('/test'));
 ### Add other middlewares
 
 You can still add other middlewares to the stack, too.  
-Just define your stack as usual and then pass it to the throttled client:
+Define your stack as usual and then pass it to the throttled client:
 
 ``` php
 $stack = HandlerStack::create(new CurlHandler());
@@ -119,13 +114,16 @@ The client will 'automatically' add every other middleware to the top of the sta
 
 #### Beforehand
 
-Responses with an error status code `4xx` or `5xx` will not be cached (even with `force-cache` enabled)! 
+Responses with an error status code `4xx` or `5xx` are not cached (even with `force-cache` enabled)!
+Note: Also, `3xx` redirect codes are not cached.
 
 ----------
 
 #### Supported drivers
 
-For now the following drivers are officially supported `File`, `Redis` and `Memcached`.
+The following drivers are officially supported: [File](https://github.com/hamburgscleanest/guzzle-advanced-throttle#file), [Redis](https://github.com/hamburgscleanest/guzzle-advanced-throttle#redis) and [Memcached](https://github.com/hamburgscleanest/guzzle-advanced-throttle#memcached).
+
+The configuration for the drivers can be seen in the [middleware repository](https://github.com/hamburgscleanest/guzzle-advanced-throttle#laravel-drivers).
 
 ----------
 
@@ -133,25 +131,23 @@ For now the following drivers are officially supported `File`, `Redis` and `Memc
 
 ##### Without caching - `no-cache`
 
-Just throttle the requests. No caching is done. When the limit is exceeded, a `429 - Too Many Requests` exception will be thrown.
+Just throttle the requests and don't cache them. When the limit is exceeded, a `429 - Too Many Requests` exception is thrown.
 
 ----------
 
 ##### With caching (default) - `cache`
 
-Use cached responses when your defined rate limit is exceeded. The middleware will try to fallback to a cached response before throwing `429 - Too Many Requests`.
+Use cached responses when your defined rate limit is exceeded. The middleware tries to fall back to a cached response before throwing a `429 - Too Many Requests` exception.
 
 ----------
 
 ##### With forced caching - `force-cache`
 
-Always use cached responses when available to spare your rate limits. As long as there is a response in cache for the current request it will return the cached response. It will only actually send the request when it is not cached. If there is no cached response and the request limits are exceeded, it will throw `429 - Too Many Requests`.
+Always uses the cached responses when available to spare your rate limits. It only sends the request when it is not cached. If there is no cached response and the request limits are exceeded, it falls back to throwing a `429 - Too Many Requests` exception.
 
 ----------
 
 ### Wildcards
-
-> Available in version 2.x.x and higher
 
 If you want to define the same rules for multiple different hosts, you can use wildcards.
 A possible use case can be subdomains:
@@ -167,7 +163,7 @@ $rules = new RequestLimitRuleset([
     ]);
 ```
 
-This `host` will match `https://www.en.mysite.com`, `https://www.de.mysite.com`, `https://www.fr.mysite.com`, etc.
+This `host` matches `https://www.en.mysite.com`, `https://www.de.mysite.com`, `https://www.fr.mysite.com`, etc.
 
 ----------
 
@@ -184,7 +180,7 @@ Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed re
 ## Testing
 
 ``` bash
-$ composer test
+composer test
 ```
 
 ## Contributing
@@ -193,7 +189,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) and [CODE_OF_CONDUCT](CODE_OF_CONDUCT
 
 ## Security
 
-If you discover any security related issues, please email chroma91@gmail.com instead of using the issue tracker.
+If you discover any security-related issues, please email chroma91@gmail.com instead of using the issue tracker.
 
 ## Credits
 

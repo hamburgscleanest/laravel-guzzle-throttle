@@ -5,18 +5,10 @@ namespace hamburgscleanest\LaravelGuzzleThrottle\Tests;
 use hamburgscleanest\LaravelGuzzleThrottle\Helpers\ConfigHelper;
 use Illuminate\Support\Facades\Config;
 
-/**
- * Class ConfigHelperTest
- * @package hamburgscleanest\LaravelGuzzleThrottle\Tests
- */
 class ConfigHelperTest extends TestCase
 {
-
-    /**
-     * @test
-     * @throws \Exception
-     */
-    public function gets_request_limit_ruleset() : void
+    /** @test */
+    public function gets_request_limit_ruleset(): void
     {
         $this->_setConfig();
 
@@ -26,10 +18,8 @@ class ConfigHelperTest extends TestCase
         $this->assertEquals(0, $requestLimitGroup->getRetryAfter());
     }
 
-    /**
-     * @test
-     */
-    public function gets_correct_redis_database() : void
+    /** @test */
+    public function gets_correct_redis_database(): void
     {
         Config::shouldReceive('get')->with('laravel-guzzle-throttle')->andReturn([
             'cache' => [
@@ -57,10 +47,8 @@ class ConfigHelperTest extends TestCase
         ConfigHelper::getRequestLimitRuleset();
     }
 
-    /**
-     * @test
-     */
-    public function uses_default_connection_when_not_configured() : void
+    /** @test */
+    public function uses_default_connection_when_not_configured(): void
     {
         Config::shouldReceive('get')->with('laravel-guzzle-throttle')->andReturn([
             'cache' => [
@@ -89,7 +77,7 @@ class ConfigHelperTest extends TestCase
     }
 
     /** @test */
-    public function uses_alternative_config() : void
+    public function uses_alternative_config(): void
     {
         Config::shouldReceive('get')->with('cache.default')->andReturn('test');
         Config::shouldReceive('get')->with('cache.stores.test')->andReturn(['driver' => 'file', 'path' => './']);
